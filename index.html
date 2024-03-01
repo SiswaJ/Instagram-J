@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Instagram - Clone coding</title>  
+
+    <style>
+      @import url('css/default.css');
+      @import url('css/feed.css');
+
+       
+      </style>
+      <script>
+        let is_liked = true;
+    
+        function like() {
+          if (is_liked == true) {
+            $('#heart').attr('src', 'image/icons/12.png')
+            is_liked = false;
+          } else {
+            $('#heart').attr('src', 'image/icons/5.png')
+            is_liked = true;
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <li class="flex-row"><img width="102" src="image/logo_instagram.png"></li>
+            <li class="flex-row sidebar-content"><img src="image/icons/1.png">
+                <p class="bold">Home</p>
+            </li>
+            <li class="flex-row sidebar-content"><img src="image/icons/11.png">
+                <p>Search</p>
+            </li>
+            <li class="flex-row sidebar-content"><img src="image/icons/4.png">
+                <p>Explore</p>
+            </li>
+            <li class="flex-row sidebar-content"><img src="image/icons/14.png">
+                <p>Reels</p>
+            </li>
+            <li class="flex-row sidebar-content"><img src="image/icons/15.png">
+                <p>Messages</p>
+            </li>
+            <li class="flex-row sidebar-content"><img src="image/icons/5.png">
+                <p>Notifications</p>
+            </li>
+            <li class="flex-row sidebar-content"><img src="image/icons/3.png">
+                <p>Create</p>
+            </li>
+            <li class="flex-row sidebar-content"><img width="32" src="image/profile/jann.jpg">
+                <p>Profile</p>
+            </li>
+            <li class="flex-row bawah-content"><img src="image/icons/16.png">
+                <p>Lebih</p>
+            </li>
+        </div>
+        <div class="wrapper">
+            <div class="tengah flex-col">
+                <div class="status-wrapper">
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/messi3.jpg"></div>
+                        <p class="username">Leomessi</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/suares1.jpg"></div>
+                        <p class="username">LuisSuares</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/djong.jpg"></div>
+                        <p class="username">Frengkie</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/beligol.jpg"></div>
+                        <p class="username">Judebellingham</p>
+                       </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/mbappe.jpg">
+                        </div>
+                        <p class="username">Kylian</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/holand.jpg"></div>
+                        <p class="username">ErlingHalland</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/yamal.jpg"></div>
+                        <p class="username">LamineYamal</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/vini.jpg"></div>
+                        <p class="username">Vini Jr</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img width="32" src="image/follower/gavi.jpg"></div>
+                        <p class="username">Gavi</p>
+                    </div>
+                </div>
+                <div class="feed flex-col">
+                    <div class="profile flex-row">
+                        <div class="img-wrap"><img width="32" src="image/post/brazil2.jpg"></div>
+                        <p class="flex-col"><span>CBF</span><span>Rio de Janeiro</span></p><img
+                            width="20" src="image/icons/7.png">
+                    </div>
+                    <div class="imgs swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="image/post/neymar1.jpg" style="width:720px"></div>
+                            <div class="swiper-slide"><img src="image/post/abi.jpg" style="width: 700px"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="feed-icons flex-row">
+                        <img id="heart" onclick="like()" src="image/icons/5.png" alt="">
+                        <img src="image/icons/9.png" alt="">
+                        <img src="image/icons/2.png" alt="">
+                        <img src="image/icons/10.png" alt="">
+                    </div>
+                    <div class="likes">9.100.0000 likes</div>
+                    <div class="comments">
+                        <span class="title">The most skillful player in the word</span>
+                        KING OF BRAZIL
+                        <span class="hashtag">#NJR #NeymarJunior #NJ10</span>
+                    </div>
+                    <div class="count">View all 169 comments</div>
+                    <div class="commentar">
+                        <div class="comment-box flex-row"><input type="text" placeholder="Add a comment.."></div>
+                        <div class="imgs emoji-icons"><img src="image/icons/17.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <div class="account-content">
+                    <li class="flex-row">
+                        <div class="img-wrap"><img width="56" src="image/profile/jann.jpg"></div>
+                        <p class="flex-col"><span>Jannuarrrrr</span><span>Jann?</span></p><a href="#">Switch</a>
+                    </li>
+                    <li class="flex-row suggestion"><span>Suggestions for you</span><a href="#">See All</a></li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap"><img width="32" src="image/profile/penaldo.jpg"></div>
+                        <p class="flex-col"><span>penaldo</span><span>Followed by ViniJr + 7 more</span></p><a
+                            href="#">Follow</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap"><img width="32" src="image/profile/debu.jpg"></div>
+                        <p class="flex-col"><span>De Bruyne</span><span>Followed by ErlingHalland + 6 more</span></p><a
+                            href="#">Follow</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap"><img width="32" src="image/profile/pedri2.jpg"></div>
+                        <p class="flex-col"><span>Pedri</span><span>Followed by Gavi + 3 more</span></p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap"><img width="32" src="image/profile/alvares.jpg"></div>
+                        <p class="flex-col"><span>Julian Alvares</span><span>Followed by LeoMessi + 7 more</span></p><a
+                            href="#">Follow</a>
+                    </li>
+                </div>
+                <div class="about"><a href="#">About</a><a href="#">Help</a><a href="#">Press</a><a href="#">API</a><a
+                        href="#">Jobs</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Locations</a><a
+                        href="#">Language</a><a href="#">Meta Verified</a></div>
+                <div class="name">© 2023 INSTAGRAM FROM META</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+    
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+    
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+</body>
+
+</html>
